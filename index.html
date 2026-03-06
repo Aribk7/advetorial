@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zanthin — Reclaim Your Freedom From Joint Pain</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .red-header {
+      background: #dc2626;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .update-box {
+      border: 2px dashed #dc2626;
+      background: #fef2f2;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 16px 0;
+    }
+
+    .update-badge {
+      background: #dc2626;
+      color: white;
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .yellow-highlight {
+      background: #fef08a;
+      padding: 2px 4px;
+    }
+
+    .headline-italic {
+      font-style: italic;
+    }
+
+    .symptom-x {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: 24px;
+      height: 24px;
+      background: #dc2626;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .cta-button {
+      background: #22c55e;
+      color: white;
+      font-weight: bold;
+      padding: 16px 24px;
+      border-radius: 8px;
+      text-align: center;
+      width: 100%;
+      display: block;
+      transition: background 0.2s;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .cta-button:hover {
+      background: #16a34a;
+    }
+
+    .article-embed {
+      border: 1px solid #1f2937;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 16px 0;
+    }
+
+    .article-header {
+      background: #f3f4f6;
+      border-bottom: 1px solid #1f2937;
+      padding: 12px;
+    }
+
+    .red-bold {
+      color: #dc2626;
+      font-weight: bold;
+    }
+
+    .trigger-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      padding: 12px;
+    }
+
+    .star-rating {
+      color: #fbbf24;
+    }
+
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid #e5e7eb;
+      padding: 12px;
+      z-index: 50;
+      box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body class="bg-white pb-24">
+  <!-- Red Header -->
+  <div class="red-header">
+    <i class="fas fa-clock mr-2"></i>Order now with express shipping for delivery by <span id="delivery-date"></span>
+  </div>
+
+  <!-- Sticky CTA -->
+  <div id="sticky-cta" class="sticky-cta hidden">
+    <a href="https://trycleared.store/products/cleared%C2%AE-anti-aging-peptide-skin-cream" class="cta-button my-6"
+      style="display: inline-block; text-decoration: none;">GET YOUR ZANTHIN SUPPLY NOW WHILE STOCK LASTS →</a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="max-w-lg mx-auto px-4 py-4">
+
+    <!-- Breadcrumb -->
+    <nav class="text-xs text-gray-500 mb-4">Home &gt; Health & Wellness &gt; Joint Health</nav>
+
+    <!-- Update Box -->
+    <div class="update-box">
+      <span class="update-badge">UPDATE: LIMITED BATCH — HIGH DEMAND</span>
+      <p class="text-red-700 font-semibold mt-2 text-sm">Zanthin is moving faster than expected.</p>
+      <p class="text-red-600 text-sm">Once this batch sells out, restocking is not guaranteed.</p>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="text-3xl font-bold text-gray-900 mb-2 leading-tight">
+      The Real Reason Your Joints Feel Worse In Your 40s And 50s Has Nothing To Do With Age
+    </h1>
+    <p class="text-lg font-medium text-gray-800 mb-4">
+      And everything to do with one cellular problem that glucosamine, turmeric, and collagen were never built to fix
+    </p>
+
+    <!-- Doctor Credentials -->
+    <p class="text-sm mb-2">
+      <span class="yellow-highlight font-medium">By Veronica B. (Joint Recovery Patient)</span>
+    </p>
+
+    <!-- Authority Block -->
+    <div class="flex items-center gap-3 my-4">
+      <img src="veronica-portrait.png" alt="Veronica B." class="w-12 h-12 rounded-full object-cover">
+      <div>
+        <p class="text-sm font-medium text-gray-900">By Veronica B.</p>
+        <div class="flex items-center gap-1">
+          <span class="star-rating flex gap-0.5">
+            <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i
+              class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+          </span>
+          <span class="text-xs text-gray-600">Rated 4.8 / 5.0 | 3,000+ Verified Customers</span>
+        </div>
+        <p class="text-xs text-gray-500">February 2, 2025</p>
+      </div>
+    </div>
+
+    <!-- Empathy Hook -->
+    <p>I used to dread getting out of bed in the morning.</p>
+    <p>Not because I was tired</p>
+    <p>Because the moment my feet hit the floor, my knees would remind me exactly how old my body had decided to feel.
+    </p>
+    <p>That familiar stiffness. That deep, grinding ache sitting right inside your joints.</p>
+    <p>The kind that doesn't care how well you slept or how much you stretched the night before.</p>
+    <p>I'm 54, but I feel like 157 when I wake up because of what I face every morning.</p>
+    <p>I'd grip the bedframe just to stand up straight. Walk to the bathroom like I was navigating ice. Stand at the
+      kitchen counter waiting for my joints to warm up before I could do anything that resembled a normal start to the
+      day.</p>
+
+
+    <!-- Pivot Word -->
+    <p class="font-bold text-gray-900">My daughter stopped asking me to come on walks with her.</p>
+
+    <!-- Explanation -->
+    <p>Not because she didn't want me there. Because she'd watched me slow down so many times that she felt guilty
+      asking.</p>
+    <p>That was the part that got me. Not the pain itself. The shrinking. The slow, steady shrinking of what I was
+      willing to do, where I was willing to go, what I was willing to say yes to.</p>
+    <p>Everyday, I could feel my freedom slowly running away from me, but that was until I discovered this.</p>
+    <p>And all it took was five seconds each morning.</p>
+    <p>If joint pain has taken over every avenue of your life, and you now feel ‘’trapped’’, this could be the most
+      important thing you read today.</p>
+
+    <div class="mt-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-2 headline-italic">My Patient "Natalie" — And the Case That Changed
+        Everything</h2>
+      <p class="text-sm text-gray-800 mb-3">Three years ago, a patient came to me desperate. I'll call her Natalie.</p>
+      <p class="text-sm text-gray-800 mb-3">She wasn't sick. She wasn't doing anything "wrong."</p>
+      <p class="text-sm text-gray-800 mb-3">But her joints had slowly stopped behaving the way they used to.</p>
+      <p class="text-sm font-medium text-gray-900 mb-3">She had:</p>
+
+      <div class="grid grid-cols-2 gap-3">
+        <div class="relative">
+          <div class="relative"><img src="symptom-tired-knees.png" alt=""
+              class="w-full aspect-square object-cover rounded-lg">
+            <div class="symptom-x">✕</div>
+          </div>
+          <p class="text-sm font-medium text-gray-800 mt-2">Joints that felt constantly "tired"</p>
+        </div>
+        <div class="relative">
+          <div class="relative"><img src="symptom-inflamed-joint.png" alt=""
+              class="w-full aspect-square object-cover rounded-lg">
+            <div class="symptom-x">✕</div>
+          </div>
+          <p class="text-sm font-medium text-gray-800 mt-2">Persistent stiffness & irritation</p>
+        </div>
+        <div class="relative">
+          <div class="relative"><img src="symptom-aching-hip.png" alt=""
+              class="w-full aspect-square object-cover rounded-lg">
+            <div class="symptom-x">✕</div>
+          </div>
+          <p class="text-sm font-medium text-gray-800 mt-2">Aching, uneven movement</p>
+        </div>
+        <div class="relative">
+          <div class="relative"><img src="absorption-diagram.jpg" alt=""
+              class="w-full aspect-square object-cover rounded-lg">
+            <div class="symptom-x">✕</div>
+          </div>
+          <p class="text-sm font-medium text-gray-800 mt-2">Inflammation that cleared slowly</p>
+        </div>
+        <div class="relative">
+          <div class="relative"><img src="symptom-grinding-bone.png" alt=""
+              class="w-full aspect-square object-cover rounded-lg">
+            <div class="symptom-x">✕</div>
+          </div>
+          <p class="text-sm font-medium text-gray-800 mt-2">Grinding that suddenly deepened</p>
+        </div>
+        <div class="relative">
+          <div class="relative"><img src="symptom-tried-everything.png" alt=""
+              class="w-full aspect-square object-cover rounded-lg">
+            <div class="symptom-x">✕</div>
+          </div>
+          <p class="text-sm font-medium text-gray-800 mt-2">Dozens of "normal" recommendations</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Patient Case Study -->
+    <div class="mt-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-2 headline-italic">My Time To Find Freedom Was Only Getting Shorter.
+      </h2>
+      <p class="text-sm text-gray-800 mb-3">Chances are, many of you have tried multiple different solutions in search
+        of salvation from your problem. I once did too.</p>
+      <p class="text-sm text-gray-800 mb-3">I had tried everything ranging from Glucosamine and Vitamin C, all the way
+        to Omega-3, and even Turmeric. I even took what my doctor recommended.</p>
+      <p class="text-sm text-gray-800 mb-3">The same doctor who made me feel like nobody was really trying to figure out
+        what was wrong. But no matter what I tried. No matter how long I stuck to it for, after 30 days, there would
+        simply be no difference.</p>
+      <p class="text-sm text-gray-800 mb-3">The only difference was in my wallet, which was now empty, and my time to
+        solve this problem, which only became shorter.</p>
+      <p class="text-sm text-gray-800 mb-3">However, one night, while diving into clinical studies on Joint Pain
+        searching for some hope, I came across something that completely surprised me. Let me explain.</p>
+    </div>
+
+    <!-- Disease Bridge -->
+    <div class="mt-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-3 headline-italic">The Real Root Cause Behind Joint Pain in Women
+        Aged 40+, and Why Nothing Seems To Work For You.</h2>
+      <p class="text-sm text-gray-800 mb-3">Most joint supplements fail for one simple reason. They never reach the
+        cells that actually maintain your joints.</p>
+
+      <div class="grid grid-cols-2 gap-3">
+        <div class="relative">
+          <div class="relative"><img src="hero-joints.jpg" alt="" class="w-full aspect-square object-cover rounded-lg">
+            <div class="symptom-x">✕</div>
+          </div>
+          <p class="text-sm font-medium text-gray-800 mt-2">Chronic inflammation</p>
+        </div>
+        <div class="relative">
+          <div class="relative"><img src="absorption-diagram.jpg" alt=""
+              class="w-full aspect-square object-cover rounded-lg">
+            <div class="symptom-x">✕</div>
+          </div>
+          <p class="text-sm font-medium text-gray-800 mt-2">Weakened joint protection</p>
+        </div>
+        <div class="relative">
+          <div class="relative"><img src="absorption-diagram.jpg" alt=""
+              class="w-full aspect-square object-cover rounded-lg">
+            <div class="symptom-x">✕</div>
+          </div>
+          <p class="text-sm font-medium text-gray-800 mt-2">Cellular breakdown</p>
+        </div>
+        <div class="relative">
+          <div class="relative"><img src="before-after-pills.jpg" alt=""
+              class="w-full aspect-square object-cover rounded-lg">
+            <div class="symptom-x">✕</div>
+          </div>
+          <p class="text-sm font-medium text-gray-800 mt-2">Accelerated joint aging</p>
+        </div>
+      </div>
+
+      <p class="text-sm text-gray-800 mt-4">But before I explain that, there is something most women in their 40s and
+        50s are never told. Something that changed how I understood everything.</p>
+      <p class="text-sm text-gray-800 mb-4">Your joints and your hormones are connected. When estrogen starts to
+        decline, it does not just affect your mood or your sleep or your weight. It affects your joints directly.</p>
+      <p class="text-sm text-gray-800 mb-4">Estrogen plays a quiet but critical role in keeping inflammation under
+        control inside your joints. It helps maintain the protective environment that your cartilage cells need to do
+        their job.</p>
+      <p class="text-sm text-gray-800 mb-4">When it drops, that protection weakens. Inflammation increases. The cellular
+        environment inside your joints becomes more vulnerable.</p>
+      <p class="text-sm text-gray-800 mb-4">And the everyday wear your body used to absorb without a second thought
+        starts leaving a mark. This is why so many women feel like their joints changed overnight somewhere in their
+        40s.</p>
+      <p class="text-sm text-gray-800 mb-4">It was not your imagination. It was not just age. It was a specific
+        biological shift that nobody thought to mention.</p>
+    </div>
+
+    <!-- What the Research Says -->
+    <div class="mt-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-3 headline-italic">What the Research Says</h2>
+      <p class="text-sm text-gray-800 mb-4">And here is where the problem lies. Not a single mainstream joint supplement
+        was designed with this model in mind:</p>
+
+      <div class="relative mb-4">
+        <img src="comparison-method.jpg" alt="" class="w-full rounded-lg">
+        <p class="mt-2 text-sm">Chronic low-grade <span class="red-bold">inflammation</span> is now recognized as a
+          primary driver of <span class="red-bold">joint deterioration</span> in clinical literature.</p>
+      </div>
+
+      <div class="article-embed">
+        <div class="article-header">
+          <p class="text-xs text-gray-600">Source: <span class="text-blue-600">ncbi.nlm.nih.gov</span></p>
+        </div>
+        <div class="p-4 bg-white">
+          <p class="font-bold text-gray-900 text-sm mb-2">Role of Inflammatory Processes in Aging Joints</p>
+          <p class="text-xs text-gray-600 mb-2">Clinical Orthopaedics Review, 2025</p>
+          <p class="text-xs text-gray-700">"Chronic low-grade inflammation plays a crucial role in cartilage breakdown.
+            Inflammatory mediators contribute to the thinning of the protective cell layer, leading to stiffness and
+            loss of daily mobility."</p>
+          <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4976417/" target="_blank"
+            class="text-xs text-blue-600 flex items-center gap-1 mt-2">
+            Read full article <i class="fas fa-external-link-alt text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="text-sm text-gray-800 mb-4">Glucosamine. Collagen. Turmeric. Fish oil. Every one of them assumes the
+        joint environment is stable. For a woman in her 40s or 50s, it is not.</p>
+      <p class="text-sm text-gray-800 mb-3">So they were already working against the odds before they even reached your
+        joints. And even when they do reach your joints, they still fall short. Here is why.</p>
+
+      <p class="text-lg font-bold italic text-gray-900 mb-2">But Here's the Worst Part:</p>
+      <p class="text-base font-bold text-gray-900 mb-3">Most People are Triggering Joint Pain — And Don't Know It</p>
+      <p class="text-sm text-gray-800 mb-4">In reality, joint discomfort is being quietly triggered by everyday habits
+        most people never connect to their bones.</p>
+
+      <div class="grid grid-cols-2 gap-3">
+        <div class="relative overflow-hidden rounded-lg"><img src="trigger-stress.png" alt=""
+            class="w-full aspect-square object-cover">
+          <div class="trigger-overlay">
+            <p class="text-white text-sm font-medium">Chronic stress</p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden rounded-lg"><img src="how-to-use.jpg" alt=""
+            class="w-full aspect-square object-cover">
+          <div class="trigger-overlay">
+            <p class="text-white text-sm font-medium">Poor sleep</p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden rounded-lg"><img src="trigger-sugar.png" alt=""
+            class="w-full aspect-square object-cover">
+          <div class="trigger-overlay">
+            <p class="text-white text-sm font-medium">High sugar diet</p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden rounded-lg"><img src="trigger-alcohol.png" alt=""
+            class="w-full aspect-square object-cover">
+          <div class="trigger-overlay">
+            <p class="text-white text-sm font-medium">Alcohol consumption</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-sm text-gray-800 mt-4">Inside every joint, you have cells whose entire job is to maintain the
+        cartilage that cushions your bones. They are called chondrocytes.</p>
+      <p class="text-sm text-gray-800 mb-3">Those cells have a protective outer layer. Think of it like a skin around
+        each cell. That layer controls everything. What gets in. What gets out. How well the cell repairs and maintains
+        the cartilage around it.</p>
+    </div>
+
+    <!-- Effects -->
+    <div class="mt-6">
+      <p class="text-sm text-gray-800 mb-4">Here's why mainstream choices were not built to reach the right place:</p>
+
+      <div class="space-y-3">
+        <div class="flex gap-4 items-start"><img src="absorption-diagram.jpg" alt=""
+            class="w-24 h-24 object-cover rounded-lg flex-shrink-0">
+          <p class="text-red-600 font-bold text-sm leading-tight">Glucosamine circulates near the joint. It never gets
+            inside that protective cell layer where repair is actually controlled.</p>
+        </div>
+        <div class="flex gap-4 items-start"><img src="astaxanthin-mechanism.jpg" alt=""
+            class="w-24 h-24 object-cover rounded-lg flex-shrink-0">
+          <p class="text-red-600 font-bold text-sm leading-tight">Collagen gives your body raw material. But it stops
+            short of the cellular level where it would actually make a difference.</p>
+        </div>
+        <div class="flex gap-4 items-start"><img src="hero-joints.jpg" alt=""
+            class="w-24 h-24 object-cover rounded-lg flex-shrink-0">
+          <p class="text-red-600 font-bold text-sm leading-tight">Turmeric barely survives the journey. Most of it
+            breaks down before meaningful amounts ever reach joint tissue.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solution -->
+    <div class="mt-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-3">So I Went Searching for a Solution…</h2>
+      <p class="text-sm text-gray-800 mb-3">When I realized how quickly my body was changing, and how much of my life I
+        was missing out on, I knew I needed a better way to stop the decline before it became permanent.</p>
+      <p class="text-sm text-gray-800 mb-3">I experimented with every supplement, extract, and "miracle cure" on the
+        market…</p>
+      <p class="text-sm text-gray-800 mb-3">Some helped for a few days. Most did nothing at all.</p>
+      <p class="text-sm text-gray-800 mb-3">Then I found what actually worked.</p>
+    </div>
+
+    <!-- Product Reveal -->
+    <div id="product-section" class="mt-6">
+      <h2 class="text-xl font-bold text-green-700 mb-2 headline-italic">Introducing: Zanthin</h2>
+      <p class="text-lg font-bold text-green-700 mb-4 headline-italic">Simple. 12mg of natural astaxanthin. Sourced from
+        the only microalgae that produces the molecule in its most concentrated natural form.</p>
+
+      <img src="product-cta.jpg" alt="" class="w-48 h-48 object-cover rounded-xl shadow-lg mx-auto mb-4">
+
+      <div class="grid grid-cols-2 gap-3 mb-4">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"><i
+              class="fas fa-check text-green-600 text-sm"></i></div><span class="text-sm">Natural Source</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"><i
+              class="fas fa-check text-green-600 text-sm"></i></div><span class="text-sm">Clinical Dose (12mg)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"><i
+              class="fas fa-check text-green-600 text-sm"></i></div><span class="text-sm">MCT Delivery</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"><i
+              class="fas fa-check text-green-600 text-sm"></i></div><span class="text-sm">Third Party Tested</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://trycleared.store/products/cleared%C2%AE-anti-aging-peptide-skin-cream" class="cta-button my-6"
+      style="display: inline-block; text-decoration: none;">GET YOUR ZANTHIN SUPPLY NOW WHILE STOCK LASTS →</a>
+
+    <!-- Ingredients -->
+    <div class="mt-6">
+      <p class="text-sm text-gray-800 mb-4">Zanthin is unlike anything you've seen. Why?</p>
+      <p class="text-sm text-gray-800 mb-4">Starting with the source, the dose, and the delivery.</p>
+
+      <div class="space-y-4">
+        <div class="flex gap-3">
+          <img src="product-cta.jpg" alt="" class="w-20 h-20 object-cover rounded-lg flex-shrink-0">
+          <div>
+            <p class="font-bold text-gray-900 text-sm">The Source</p>
+            <p class="text-xs text-gray-600">Zanthin uses only natural astaxanthin sourced directly from Haematococcus
+              pluvialis. Not synthetic.</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <img src="astaxanthin-mechanism.jpg" alt="" class="w-20 h-20 object-cover rounded-lg flex-shrink-0">
+          <div>
+            <p class="font-bold text-gray-900 text-sm">The Dose & Delivery</p>
+            <p class="text-xs text-gray-600">12mg of clinical strength astaxanthin per softgel. Infused with MCT oil for
+              maximal absorption.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="mt-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-3">How Zanthin™ Works</h2>
+      <p class="text-sm text-gray-800 mb-4">Instead of just masking the pain, Zanthin™ supports your joints where the
+        cell-level breakdown actually begins.</p>
+
+      <div class="space-y-3">
+        <div class="flex gap-3 items-center"><img src="hero-joints.jpg" alt=""
+            class="w-16 h-16 object-cover rounded-lg flex-shrink-0">
+          <p class="text-sm text-gray-800">Targets inflammation systemically (not just on the surface)</p>
+        </div>
+        <div class="flex gap-3 items-center"><img src="astaxanthin-mechanism.jpg" alt=""
+            class="w-16 h-16 object-cover rounded-lg flex-shrink-0">
+          <p class="text-sm text-gray-800">Breaks through damaged barriers other treatments can't penetrate</p>
+        </div>
+        <div class="flex gap-3 items-center"><img src="process-flowchart.jpg" alt=""
+            class="w-16 h-16 object-cover rounded-lg flex-shrink-0">
+          <p class="text-sm text-gray-800">Supports natural joint recovery pathways</p>
+        </div>
+        <div class="flex gap-3 items-center"><img src="product-zanthin.jpg" alt=""
+            class="w-16 h-16 object-cover rounded-lg flex-shrink-0">
+          <p class="text-sm text-gray-800">Maintains the clinical dose needed for cellular health</p>
+        </div>
+      </div>
+
+      <h2 class="text-xl font-bold text-gray-900 mb-3 mt-8">How Zanthin Allowed Me To Be Myself Once Again.</h2>
+      <p class="text-sm text-gray-800 mb-3">Zanthin was introduced to me by a friend at work, who had been facing the
+        exact same problems as me. I’ll admit, when I first saw Zanthin, I was skeptical, and I’m sure currently, many
+        of you are also.</p>
+      <p class="text-sm text-gray-800 mb-3">We’ve spent not only our hard earned money, but also our time on trying
+        multiple different solutions. But, nothing ever seemed to work for us. No matter how much we spent, or how long
+        we tried. So naturally, who wouldn’t be skeptical?</p>
+      <p class="text-sm text-gray-800 mb-3">However… I did eventually decide to try. After seeing that they had a
+        Lifetime Free Returns Policy, I decided to give it a try especially since I hadn’t seen any other brand do that.
+      </p>
+      <p class="text-sm text-gray-800 mb-3">Worst case scenario? I try it for a whole month, and if it doesn’t work I
+        still get my money back. Even if the containers are empty. But more importantly, I had tried almost everything
+        out there, and I had finally found something that seemed to make sense.</p>
+    </div>
+
+    <a href="https://trycleared.store/products/cleared%C2%AE-anti-aging-peptide-skin-cream" class="cta-button my-6"
+      style="display: inline-block; text-decoration: none;">GET YOUR ZANTHIN SUPPLY NOW WHILE STOCK LASTS →</a>
+
+    <div class="mt-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">How Zanthin Is Already Helping Thousands.</h2>
+
+      <div class="border-t border-gray-200 pt-4 mt-4">
+        <div class="flex items-center gap-3 mb-2">
+          <img src="testimonial-veronica-active.png" alt="Veronica B." class="w-10 h-10 rounded-full object-cover">
+          <p class="text-sm font-medium text-gray-900">Veronica B | Verified Buyer</p>
+        </div>
+        <p class="text-sm text-gray-800 italic mb-3">‘’Rheumatoid arthritis for 6 years. Celebrex every morning. My
+          doctor kept saying my inflammation markers were stubbornly elevated. Three months on Zanthin and my CRP
+          dropped for the first time since diagnosis. My morning stiffness used to last until noon. Now it's gone before
+          I finish my first cup of coffee. I don't know why no one told me about this sooner.’’</p>
+      </div>
+
+      <div class="border-t border-gray-200 pt-4 mt-4">
+        <div class="flex items-center gap-3 mb-2">
+          <img src="testimonial-rebecca-yoga.png" alt="Rebecca S." class="w-10 h-10 rounded-full object-cover">
+          <p class="text-sm font-medium text-gray-900">Rebecca S. | Verified Buyer</p>
+        </div>
+        <p class="text-sm text-gray-800 italic mb-3">‘’Osteoarthritis in both hips and my left shoulder. The orthopedist
+          said hip replacement within 2 to 3 years. That was 18 months ago. I started Zanthin 14 months ago. My last
+          imaging showed the deterioration plateaued. No new bone spurs. No additional cartilage loss. His exact words
+          were I don't see the progression I expected. I know exactly why he doesn't see it.’’</p>
+      </div>
+
+      <div class="border-t border-gray-200 pt-4 mt-4">
+        <div class="flex items-center gap-3 mb-2">
+          <img src="testimonial-tanya-garden.png" alt="Tanya M." class="w-10 h-10 rounded-full object-cover">
+          <p class="text-sm font-medium text-gray-900">Tanya M. | Verified Buyer</p>
+        </div>
+        <p class="text-sm text-gray-800 italic mb-3">‘’Both knees are bone on bone. Retired firefighter. 34 years of
+          climbing ladders and carrying gear. On Lipitor and Lisinopril. Eight pills every morning and my body was still
+          falling apart. Two months on Zanthin and my knees stopped waking me up at 3 AM. The last lipid panel showed
+          LDL dropped 18 points. Blood pressure 128/78. Lowest reading in three years.’’</p>
+      </div>
+    </div>
+
+    <div class="mt-6 bg-gray-50 rounded-xl p-4">
+      <h2 class="text-lg font-bold text-gray-900 mb-3 headline-italic">How You Can Get Zanthin Today</h2>
+      <p class="text-sm text-gray-800 mb-3">Normally, Zanthin costs $79.99 which is the price I had to pay. However, at
+        the moment Zanthin is doing a whole site sale.</p>
+      <p class="text-sm text-gray-800 mb-4">For a limited time, you won’t even have to pay 50% of that price. Zanthin
+        will cost you <strong class="text-green-700 text-lg">$31.99 today</strong>. That’s equivalent to around $1.06 a
+        day.</p>
+      <p class="text-sm text-red-600 font-bold mb-4">Notice: STOCK IS LOW. We won’t have any stock left by the end of
+        the week.</p>
+    </div>
+
+    <a href="https://trycleared.store/products/cleared%C2%AE-anti-aging-peptide-skin-cream" class="cta-button my-6"
+      style="display: inline-block; text-decoration: none;">GET YOUR ZANTHIN SUPPLY NOW WHILE STOCK LASTS →</a>
+
+    <div class="mt-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-3 headline-italic">What Your Life Could Look Like Starting This
+        Week.</h2>
+      <p class="text-sm text-gray-800 mb-3">Picture your next Monday morning. No gripping the bedframe. No shuffling to
+        the bathroom. No standing at the kitchen counter waiting for your joints to catch up with the rest of you.</p>
+      <p class="text-sm text-gray-800 mb-3">Just getting up. And getting on with your day. Picture saying yes to the
+        walk your daughter asked about. Sitting on the floor with your grandkids without thinking twice about how you'll
+        get back up. Moving through your day without your joints announcing themselves with every step.</p>
+      <p class="text-sm text-gray-800 mb-3">Picture going to bed at night without dreading the morning. Without lying
+        there wondering whether tomorrow is going to be a good day or a bad one. Without the quiet background anxiety of
+        a body you no longer fully trust.</p>
+      <p class="text-sm text-gray-800 mb-3">That version of your life is not out of reach. That is what happens when the
+        cells maintaining your cartilage finally get what they need to do their job properly. For thousands of women
+        using Zanthin, this is already their reality.</p>
+      <p class="text-sm text-gray-800 mb-3">Women who tried glucosamine, turmeric, collagen, and every other supplement
+        on the shelf. Women who had given up on feeling different. Women who, two weeks into their first bottle, got out
+        of bed one morning and realised something had shifted.</p>
+      <p class="text-sm text-gray-800 mb-3">It was not a dramatic overnight transformation. It was something quieter
+        than that. And more powerful. It was just freedom. Slowly coming back. You have absolutely nothing to lose to
+        find out if it can be yours.</p>
+      <p class="text-sm text-gray-800 mb-3">Zanthin comes with a lifetime money back guarantee. Every penny returned. No
+        questions asked. Even if the bottle is empty. The pain has already taken enough from you. The only question is
+        how much longer you are willing to let it.</p>
+
+      <div class="mt-6 relative">
+        <img src="doctor-quote.jpg" alt="" class="w-full rounded-lg">
+        <div class="absolute bottom-4 left-4 bg-white/90 p-3 rounded-lg backdrop-blur-sm">
+          <p class="text-xs font-bold text-gray-900">Veronica B.</p>
+          <p class="text-[10px] text-gray-600">Reclaimed her freedom in February 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notice -->
+    <div class="mt-6 bg-yellow-50 border border-yellow-300 rounded-lg p-4">
+      <p class="text-red-600 font-bold text-sm mb-2">NOTICE:</p>
+      <p class="text-sm text-gray-800">Zanthin packets are <span class="font-bold">selling out fast.</span></p>
+      <p class="text-sm text-gray-800 mt-2">We've already sold out 5 times this year.</p>
+    </div>
+
+    <a href="https://trycleared.store/products/cleared%C2%AE-anti-aging-peptide-skin-cream" class="cta-button my-6"
+      style="display: inline-block; text-decoration: none;">GET YOUR ZANTHIN SUPPLY NOW WHILE STOCK LASTS →</a>
+
+    <!-- Important Note -->
+    <div class="mt-6 border-2 border-dashed border-red-400 bg-red-50 rounded-lg p-4">
+      <p class="text-red-600 font-bold text-sm mb-2">IMPORTANT NOTE:</p>
+      <p class="text-sm text-gray-800">Zanthin is <strong>NOT</strong> available on Amazon, eBay, or in stores. To
+        ensure you receive the authentic product with clinical-strength ingredients, only order from our official
+        website.</p>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="mt-6 flex justify-center gap-4">
+      <div class="text-center">
+        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-1"><span
+            class="text-xs font-bold text-yellow-700 text-center">90 DAY<br>MONEY<br>BACK</span></div>
+      </div>
+      <div class="text-center">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-1"><span
+            class="text-xs font-bold text-green-700 text-center">FREE<br>SHIPPING</span></div>
+      </div>
+      <div class="text-center">
+        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1"><span
+            class="text-xs font-bold text-blue-700 text-center">VERIFIED<br>SAFE</span></div>
+      </div>
+    </div>
+
+    <a href="https://trycleared.store/products/cleared%C2%AE-anti-aging-peptide-skin-cream" class="cta-button my-6"
+      style="display: inline-block; text-decoration: none;">GET YOUR ZANTHIN SUPPLY NOW WHILE STOCK LASTS →</a>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-lg mx-auto px-4 text-center">
+      <p class="font-bold text-lg mb-2">Zanthin Health</p>
+      <p class="text-xs text-gray-400 mb-4">Home &gt; Health & Wellness &gt; Joint Health</p>
+      <p class="text-xs text-gray-500">© 2025 Zanthin Health. All Rights Reserved.</p>
+      <div class="flex justify-center gap-4 mt-4 text-xs text-gray-400">
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Terms of Service</a>
+        <a href="#" class="hover:text-white">Contact</a>
+      </div>
+      <p class="text-xs text-gray-600 mt-4">These statements have not been evaluated by the FDA. This product is not
+        intended to diagnose, treat, cure, or prevent any disease.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set delivery date (3 days from now)
+    const deliveryDate = new Date();
+    deliveryDate.setDate(deliveryDate.getDate() + 3);
+    document.getElementById('delivery-date').textContent = deliveryDate.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+
+    // Show sticky CTA after scrolling
+    window.addEventListener('scroll', function () {
+      const stickyCta = document.getElementById('sticky-cta');
+      if (window.scrollY > 600) {
+        stickyCta.classList.remove('hidden');
+      } else {
+        stickyCta.classList.add('hidden');
+      }
+    });
+
+    // Scroll to product section
+    function scrollToProduct() {
+      document.getElementById('product-section').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+
+</html>
