@@ -114,7 +114,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -296,7 +296,7 @@
           Once they are gone, you will have to wait until late next year to get it.</p>
       </div>
 
-      <img src="product-cta.jpg" alt="Zanthin Product"
+      <img src="product-cta.jpg" alt="Zanthin Astaxanthin 12mg — 120 Softgels"
         class="w-full max-w-xs mx-auto my-8 drop-shadow-2xl hover:scale-105 transition duration-300">
 
       <p>Right now, because you're reading this page, the manufacturers of Zanthin have agreed to a highly controversial
@@ -313,8 +313,8 @@
 
       <div class="my-8">
         <a href="https://zanthin.store/products/astaxanthin-anti-inflammatory-supplement-copy?variant=46563811655865"
-          class="cta-button-aggressive">
-          CLAIM YOUR ZANTHIN FOR 60% OFF NOW
+          class="cta-button-aggressive" onclick="fbq('trackCustom','InitiateCheckoutAD')">
+          Try Zanthin Risk-Free For 30 Days
           <span class="block text-xs font-normal mt-1 text-red-200">Stock updating... Almost sold out.</span>
         </a>
       </div>

@@ -115,7 +115,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -251,10 +251,14 @@
                 direct-to-consumer implementation.</p>
 
             <div class="my-10 bg-slate-50 border border-slate-200 p-6 rounded-lg text-center">
+                <div class="flex justify-center mb-6">
+                    <img src="product-cta.jpg" alt="Zanthin Astaxanthin 12mg — 120 Softgels"
+                        class="w-48 h-auto drop-shadow-xl">
+                </div>
                 <p class="font-bold text-slate-800 mb-4">Official Patient Access Portal (Subsidized Pricing: $31.99)</p>
                 <a href="https://zanthin.store/products/astaxanthin-anti-inflammatory-supplement-copy?variant=46563811655865"
-                    class="cta-button-clinical">
-                    Request Zanthin Protocol Supply
+                    class="cta-button-clinical" onclick="fbq('trackCustom','InitiateCheckoutAD')">
+                    Try Zanthin Risk-Free For 30 Days
                 </a>
                 <p class="text-xs text-slate-500 mt-3">Backed by Independent Scientific Documentation & 100% Efficacy
                     Guarantee</p>

@@ -91,7 +91,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -193,6 +193,11 @@
 
             <p>She handed me a bottle of something called <strong>Zanthin.</strong></p>
 
+            <div class="flex justify-center my-8">
+                <img src="product-cta.jpg" alt="Zanthin Astaxanthin 12mg — 120 Softgels"
+                    class="w-56 h-auto drop-shadow-xl rounded-lg">
+            </div>
+
             <p>She explained that when our hormones change in our late 40s and 50s, the cells that protect our joints
                 lose their defense mechanisms. They get flooded with chronic inflammation. At that point, no amount of
                 collagen will help because the cells are too inflamed to absorb it.</p>
@@ -239,8 +244,8 @@
         </div>
 
         <a href="https://zanthin.store/products/astaxanthin-anti-inflammatory-supplement-copy?variant=46563811655865"
-            class="cta-button-story">
-            Experience Zanthin For Yourself
+            class="cta-button-story" onclick="fbq('trackCustom','InitiateCheckoutAD')">
+            Try Zanthin Risk-Free For 30 Days
         </a>
 
     </div>
